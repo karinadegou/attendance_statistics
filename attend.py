@@ -2,8 +2,8 @@ import openpyxl
 import re
 
 # 加载第一个和第二个 .xlsx 文件
-file1_path = "D:\\Works\\files\\副本21天单词打卡记录(1).xlsx"  # 第一个文件的路径
-file2_path = "D:\\Works\\files\\excel_9192587_圈子成员_9192587_1731153224339_512d5a.xlsx"  # 第二个文件的路径
+file1_path = input("请输入总统计表的路径（不需要双引号）：")  # 第一个文件的路径
+file2_path = input("请输入当日导出的打卡统计表（不需要双引号）：")  # 第二个文件的路径
 file1 = openpyxl.load_workbook(file1_path)
 file2 = openpyxl.load_workbook(file2_path)
 
